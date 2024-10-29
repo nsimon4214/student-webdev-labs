@@ -5,12 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Exercise 04 - Form</title>
+    <style>
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+    </style>
   </head>
   <body>
+    <h1>Form</h1>
     <main>
       <form action="/submit">
-        <!-- Add your code here -->
+        <ul>
+          <li>
+            <label>
+              Name: <input type="text" placeholder="Full Name" name="studentname" />
+            </label>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <label>
+              Email:
+              <input typ="text" placeholder="name@pdx.edu" name="studentemail" />
+            </label>
+          </li>
+        </ul>
+        <h2></h2>
+        <fieldset>
+          <legend>Favorite Character</legend>
+          <ul>
+            <li>
+              <label>
+                <input
+                  type="radio"
+                  value="spongebob"
+                  name="character"
+                />Spongebob
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="radio" value="sandy" name="character" />Sandy
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="radio" value="patrick" name="character" />Patrick
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <h3></h3>
+        <fieldset>
+          <legend>Are you a fan of the show?</legend>
+          <ul>
+            <li>
+              <label>
+                <input type="checkbox" value="yes" name="fan" />Yes, I have
+                watched all episodes!
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" value="no" name="fan" />Yes, it's got the
+                best memes.
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <h4></h4>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
       </form>
     </main>
   </body>
 </html>
+
+<!--
+Directions: Create a form that uses input elements of type name, email, radio, checkbox, and more.
+-->
