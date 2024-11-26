@@ -23,3 +23,5 @@ nav ul.menu li#first a:not([class='visited']) {
 div ol li ul li ol li ul li a {
   color: var(--purple);
 }
+
+/*I put the specificity's in the .md file*/
