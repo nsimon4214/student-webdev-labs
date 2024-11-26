@@ -26,21 +26,42 @@ Calculate the specificity of the rules below.
 ```css
 nav .list-item > a {
 }
+nav = element selector -> 1
+.list-item = class selector -> 1
+> a = element selector -> 1
+Specificity: 0,0,1,2
 
 #main::first-letter {
 }
+#main = ID selector -> 1
+::first-letter = psuedo-element -> 1
+specificity: 0,1,0,1
 
 input[type] {
 }
+input = element selector -> 1
+[type] = attribute selector -> 1
+specificity: 0,0,1,1
 
 section .main::first-line {
 }
+section = element selector -> 1
+.main = class selector -> 1
+::first-line = psuedo-element -> 1
+specificity: 0,0,1,2
 
 nav ul.menu li#first a:not([class='visited']) {
 }
+nav = element selector -> 1
+ul.menu = element + class selector -> 1 & 1
+li#first = element + ID selector -> 1 & 1
+a:not([class='visited']) = element + psuedo-class + attributes -> 1 & 1 & 1
+specificty: 0,1,3,4
 
 div ol li ul li ol li ul li a {
 }
+div ol li ul li ol li ul li a = element selectors -> 10
+specificity: 0,0,0,10
 ```
 
 ## <a id="ex04"></a> Exercise 04 - Layout
