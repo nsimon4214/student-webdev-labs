@@ -1,8 +1,38 @@
 .flex-container {
+  display: flex;
   background-color: rgb(190, 190, 231);
+  height: 400px;
+  width: 600px;
+}
+
+.flex-container .flex-item {
+  width: 100px;
+  height: 100px;
+  margin: .75%;
 }
 
 /* Flex Container 1 */
+.flex-container-1 {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  gap: 0px;
+}
+
+/*.flex-container-1 {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  height: 400px;
+}
+
+.flex-container-1 .flex-item {
+  width: calc((100% - 40px) / 6);
+  height: calc((100% - 40px) / 2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}*/
 
 /* Flex Container 2 */
 
