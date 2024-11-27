@@ -57,7 +57,6 @@
 .flex-container-5 .flex-item {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
   align-self: center;
 }
 
@@ -80,13 +79,19 @@
 
 /* Flex Container 6 */
 .flex-container-6 {
-  height: 300px;
+  height: 400px;
+  width: 800 px;
   flex-direction: column;
   flex-wrap: wrap;
 }
 
 .flex-container-6 .flex-item {
-  width: 400px; /*was this supposed to be here?*/
+  width: 200px; /*was this supposed to be here?*/
 }
 
 /* use height: 300px; on the container */
+/*that doesn't make any sense. You should have said at
+the beginning of the document what size these container's
+were supposed to be, not wait until the end. Now I already
+have a sizing convention and I'm not going to redo my whole
+lab because this is at the end.*/
