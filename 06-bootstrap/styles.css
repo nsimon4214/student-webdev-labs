@@ -2,6 +2,10 @@ h1 {
   text-align: center;
 }
 
+h5 {
+  font-weight: bold;
+}
+
 form {
   width: 600px;
 }
@@ -20,4 +24,123 @@ form > * {
 
 .box {
   height: 160px;
+}
+
+.grid-container-1 {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  height: 400px;
+  width: 100%;
+  font-size: 0.5em;
+}
+
+.grid-container-1 .item1,
+.grid-container-1 .item2 {
+  grid-column: span 3;
+  text-align: left;
+}
+
+.grid-container-1 .item3 {
+  grid-column: span 4;
+  text-align: left;
+}
+
+.grid-container-1 .item4 {
+  grid-column: span 2;
+  text-align: left;
+}
+
+.grid-container-1 .item5,
+.grid-container-1 .item6,
+.grid-container-1 .item7 {
+  grid-column: span 2;
+  text-align: left;
+}
+
+.grid-container-2 {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  height: 400px;
+  width: 100%;
+  max-width: 1000px;
+  font-size: 0.5em;
+  margin: 0 auto;
+}
+
+.grid-container-2 .item1,
+.grid-container-2 .item2 {
+  grid-column: span 3;
+  text-align: left;
+}
+
+.grid-container-2 .item3 {
+  grid-column: span 4;
+  text-align: left;
+}
+
+.grid-container-2 .item4 {
+  grid-column: span 2;
+  text-align: left;
+}
+
+.grid-container-2 .item5 {
+  grid-column: span 4;
+  text-align: left;
+}
+
+.grid-container-2 .item6,
+.grid-container-2 .item7 {
+  grid-column: span 1;
+  text-align: left;
+}
+
+@media (max-width: 500px) {
+  .grid-container-2 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    height: 400px;
+    width: 100%;
+    max-width: 500px;
+    font-size: 0.5em;
+    margin: 0 auto;
+  }
+
+  .grid-container-2 .item1,
+  .grid-container-2 .item2 {
+    grid-column: span 3;
+    text-align: left;
+  }
+
+  .grid-container-2 .item3 {
+    grid-column: span 4;
+    text-align: left;
+  }
+
+  .grid-container-2 .item4 {
+    grid-column: span 2;
+    text-align: left;
+  }
+
+  .grid-container-2 .item5,
+  .grid-container-2 .item6,
+  .grid-container-2 .item7 {
+    grid-column: span 2;
+    text-align: left;
+  }
+}
+
+@media (max-width: 400px) {
+  .grid-container-2 {
+    font-size: 0.3em;
+  }
+  .grid-container-2 .item1,
+  .grid-container-2 .item2,
+  .grid-container-2 .item5,
+  .grid-container-2 .item6,
+  .grid-container-2 .item7 {
+    grid-column: span 6;
+  }
 }

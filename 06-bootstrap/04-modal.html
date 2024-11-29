@@ -7,12 +7,49 @@
     <title>Exercise 04 - Modals</title>
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    />
     <link rel="stylesheet" href="../_styles/styles.css" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
   </head>
   <body>
     <h1>04 - Bootstrap Modal</h1>
-    <!-- Add your code here -->
+    <div style="text-align: center">
+      <h2>Click on the button below for more information inside a modal</h2>
+      <button
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#detailsModal"
+      >
+        More details
+      </button>
+    </div>
+    <div
+      class="modal fade"
+      id="detailsModal"
+      tabindex="-1"
+      aria-labelledby="detailsModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="detailsModalLabel">More Detail</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+            ex suscipit corrupti, dicta vel similique vitae earum fugiat,
+            deserunt iusto itaque quidem recusandae inventore reprehenderit quia
+            dolores molestias beatae ipsum?
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
