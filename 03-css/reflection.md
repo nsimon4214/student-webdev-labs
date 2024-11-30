@@ -5,7 +5,7 @@
 **Q:** Were you able to complete the exercises on your own or did you use the
 videos or the solutions for help?
 
-**A:** I was able to do these on my own.
+**A:** I couldn't understand the media queries and the solutions repo wasn't helpful at all.
 
 **Q:** How helpful did you find the exercises in this section? Was there one
 exercise that was particularly helpful?
@@ -14,7 +14,7 @@ exercise that was particularly helpful?
 
 **Q:** Was there something that you wish had been explained better?
 
-**A:** No.
+**A:** The instructions weren't clear.
 
 **Q:** Were there other exercises that might have helped you learn this week’s
 topic a little better?
@@ -35,7 +35,7 @@ exercise that was particularly helpful?
 
 **Q:** Was there something that you wish had been explained better?
 
-**A:** No.
+**A:** The instructions weren't clear.
 
 **Q:** Were there other exercises that might have helped you learn this week’s
 topic a little better?
